@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TripSIM AI v2</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><div class="brand"><span class="logo">T</span><div><b>TripSIM AI</b><small>旅遊上網顧問 · v2</small></div></div><div id="status" class="status">檢查中</div></header>
+<main>
+<section class="hero"><div><span class="chip">GenAI × RAG × 推薦引擎</span><h1>一句話描述旅程，<br><em>AI 幫你算好網路。</em></h1><p>自然語言理解旅遊需求，檢索知識、估算流量、匹配 eSIM，再生成個人化導購理由。</p></div><div class="flow"><span>需求理解</span><i>→</i><span>RAG</span><i>→</i><span>流量估算</span><i>→</i><span>商品推薦</span></div></section>
+<section class="workspace">
+<div class="chat panel"><div class="panel-title"><div><small>STEP 1</small><h2>AI 旅遊顧問</h2></div><button id="demo" class="ghost">載入示範</button></div>
+<div class="messages" id="messages"><div class="msg ai">嗨！直接告訴我你的旅程，例如：「我要去大阪 6 天，會一直用 Google Maps、拍 IG 限動，飯店有 Wi‑Fi。」</div></div>
+<form id="form"><textarea id="input" rows="4" placeholder="描述目的地、天數與上網習慣…"></textarea><div class="composer"><span>Enter 送出 · Shift+Enter 換行</span><button>✨ AI 分析</button></div></form></div>
+<div class="result panel"><div class="panel-title"><div><small>STEP 2</small><h2>推薦結果</h2></div><span id="mode" class="badge">等待分析</span></div><div id="empty" class="empty"><div>AI</div><p>結果會顯示 Persona、流量、商品、RAG 依據與行銷文案。</p></div>
+<div id="content" class="hidden"><div class="persona"><div><small>旅客 Persona</small><h3 id="persona"></h3><p id="summary"></p></div><span id="emoji">🧭</span></div>
+<div class="metrics"><div><small>每日預估</small><b id="daily"></b></div><div><small>整趟預估</small><b id="total"></b></div><div class="hot"><small>推薦方案</small><b id="plan"></b></div></div>
+<div class="product"><div><small>推薦商品</small><h3 id="product"></h3><p id="price"></p></div><button id="buy">立即購買 Demo</button></div>
+<div class="copy"><small>AI 推薦理由</small><p id="reason"></p></div><div class="copy promo"><small>GenAI 個人化導購文案</small><p id="promo"></p></div>
+<div><small class="section-label">旅遊上網提醒</small><ul id="tips"></ul></div>
+<div><small class="section-label">RAG 檢索依據</small><div id="rag" class="rag"></div></div>
+</div></div></section>
+<section class="tech panel"><div><small>TECH STACK</small><h2>這版真的多了什麼？</h2></div><div class="cards"><article><b>自然語言輸入</b><p>不再填表，直接用一句話描述旅程。</p></article><article><b>本地 RAG</b><p>從旅遊上網知識庫抓取推薦依據。</p></article><article><b>商品資料庫</b><p>依國家、天數與預估流量匹配方案。</p></article><article><b>雙模式 AI</b><p>沒 API Key 也可 Demo；有 Key 自動啟用 LLM。</p></article></div></section>
+</main><dialog id="dialog"><div class="modal"><div class="check">✓</div><h3>導購流程 Demo</h3><p>正式版可在此串接去趣 eSIM 商品 SKU、優惠碼、會員與轉換追蹤。</p><button onclick="this.closest('dialog').close()">完成</button></div></dialog>
+<footer>TripSIM AI · Hackathon Prototype v2 · 商品與價格皆為模擬資料</footer><script src="app.js"></script></body></html>
