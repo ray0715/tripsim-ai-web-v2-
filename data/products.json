@@ -1,0 +1,12 @@
+[
+  {"id":"jp-5","country":"日本","gb":5,"days":7,"price":199,"name":"日本 5GB / 7日","tags":["輕量","導航","聊天"]},
+  {"id":"jp-10","country":"日本","gb":10,"days":15,"price":299,"name":"日本 10GB / 15日","tags":["社群","自由行","推薦"]},
+  {"id":"jp-20","country":"日本","gb":20,"days":30,"price":449,"name":"日本 20GB / 30日","tags":["影音","重度"]},
+  {"id":"jp-unlimited","country":"日本","gb":999,"days":10,"price":599,"name":"日本 吃到飽 / 10日","tags":["吃到飽","熱點","工作"]},
+  {"id":"kr-5","country":"韓國","gb":5,"days":7,"price":189,"name":"韓國 5GB / 7日","tags":["輕量","導航"]},
+  {"id":"kr-10","country":"韓國","gb":10,"days":15,"price":279,"name":"韓國 10GB / 15日","tags":["社群","自由行"]},
+  {"id":"kr-20","country":"韓國","gb":20,"days":30,"price":429,"name":"韓國 20GB / 30日","tags":["影音","重度"]},
+  {"id":"hk-10","country":"香港","gb":10,"days":10,"price":239,"name":"香港 10GB / 10日","tags":["城市旅遊","社群"]},
+  {"id":"mo-10","country":"澳門","gb":10,"days":10,"price":239,"name":"澳門 10GB / 10日","tags":["城市旅遊","社群"]},
+  {"id":"cn-10","country":"中國","gb":10,"days":15,"price":329,"name":"中國 10GB / 15日","tags":["導航","社群","自由行"]}
+]
